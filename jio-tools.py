@@ -10,8 +10,8 @@ application = Application.builder().token(bot_token).build()
 
 # Function to send custom SMS using CSV data
 async def send_custom_sms(update: Update, context):
-    # GitHub থেকে CSV ফাইলের URL
-    csv_url = 'https://github.com/fakesulaiman/JIO-TELEGRAM/blob/main/Jio-Tools-server.csv'
+    # GitHub থেকে CSV ফাইলের RAW URL
+    csv_url = 'https://raw.githubusercontent.com/fakesulaiman/JIO-TELEGRAM/main/Jio-Tools-server.csv'
 
     # CSV ফাইল থেকে ডেটা লোড করা
     try:
