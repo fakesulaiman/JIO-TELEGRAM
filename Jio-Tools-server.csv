@@ -1,1 +1,3 @@
-"number,message 01812345678,Hello, this is a test message! 01887654321,Your account has been updated successfully."
+number,message
+01812345678,Hello, this is a test message!
+01887654321,Your account has been updated successfully.
