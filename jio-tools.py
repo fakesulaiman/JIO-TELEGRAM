@@ -1,3 +1,4 @@
+import os
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
@@ -10,8 +11,9 @@ def echo(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Hello, World!')
 
 def main() -> None:
-    # Initialize the bot with the provided token
-    updater = Updater("7536686958:AAEuQ6SEfiDpl1eJONGXDjJLPqlijRrwSus")
+    # Read the bot token from the environment variable
+    token = os.getenv("7536686958:AAEuQ6SEfiDpl1eJONGXDjJLPqlijRrwSus")
+    updater = Updater(token)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
