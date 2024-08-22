@@ -12,7 +12,7 @@ def echo(update: Update, context: CallbackContext) -> None:
 
 def main() -> None:
     # Read the bot token from the environment variable
-    token = os.getenv("7536686958:AAEuQ6SEfiDpl1eJONGXDjJLPqlijRrwSus")
+    token = os.getenv("TELEGRAM_BOT_TOKEN")
     updater = Updater(token)
 
     # Get the dispatcher to register handlers
